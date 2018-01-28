@@ -34,9 +34,8 @@
             this.$root.echo
                 .private('dashboard')
                 .listen('.RatpTraffic.Events.Traffic', response => {
-                console.log(alert('ok'));
-            this.traffics = response.traffics;
-        });
+                    this.traffics = response.traffics;
+                });
         },
     };
 </script>

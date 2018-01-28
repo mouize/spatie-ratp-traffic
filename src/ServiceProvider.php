@@ -33,5 +33,9 @@ class ServiceProvider extends BaseServiceProvider
         $this->publishes([
             __DIR__.'/assets' => resource_path('assets'),
         ], 'public');
+
+        $this->publishes([
+            __DIR__.'/public' => public_path(),
+        ], 'public');
     }
 }

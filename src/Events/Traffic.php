@@ -7,7 +7,7 @@ use App\Events\DashboardEvent;
 class Traffic extends DashboardEvent
 {
     /** @var array */
-    public $traffic;
+    public $traffics;
 
     public function __construct(array $traffics)
     {

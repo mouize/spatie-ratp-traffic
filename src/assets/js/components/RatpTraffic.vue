@@ -14,7 +14,6 @@
 </template>
 
 <script>
-    import echo from '../mixins/echo';
     import Tile from './atoms/Tile';
 
     export default {
@@ -22,8 +21,6 @@
         components: {
             Tile,
         },
-
-        mixins: [echo],
 
         props: ['position', 'transporter'],
 
@@ -33,14 +30,13 @@
             };
         },
 
-        methods: {
-            getEventHandlers() {
-                return {
-                    'Ratp.Traffic': response => {
-                        this.traffics = response.traffics;
-                    },
-                };
-            },
+        created() {
+            this.$root.echo
+                .private('dashboard')
+                .listen('.RatpTraffic.Events.Traffic', response => {
+                console.log(alert('ok'));
+            this.traffics = response.traffics;
+        });
         },
     };
 </script>

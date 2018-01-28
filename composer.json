@@ -1,0 +1,17 @@
+{
+    "name": "mouizina/ratp-traffic",
+    "description": "Tile with traffic status of RATP transports (metro, rer, tramway)",
+    "authors": [
+        {
+            "name": "Mouizina",
+            "email": "saad.mouizina@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-0": {
+            "TrafficRatp": "src/"
+        }
+    }
+}

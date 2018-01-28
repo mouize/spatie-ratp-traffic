@@ -1,10 +1,10 @@
 <?php
 
-namespace RatpTraffic\Console\Ratp;
+namespace RatpTraffic\Console;
 
 use GuzzleHttp\Client;
 use Illuminate\Console\Command;
-use TrafficRatp\Events\Traffic as EventTraffic;
+use RatpTraffic\Events\Traffic as EventTraffic;
 
 /**
  * Get the Ratp metro and RER traffic (real time)

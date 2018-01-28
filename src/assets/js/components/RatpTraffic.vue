@@ -3,7 +3,7 @@
         <section class="ratp">
                 <table class="table table-striped table-dark">
                     <tbody>
-                    <tr v-for="status in traffic[transporter]">
+                    <tr v-for="status in traffics[transporter]">
                         <td><img :src="status.icon" /></td>
                         <td>{{status.title}}</td>
                     </tr>
@@ -29,7 +29,7 @@
 
         data() {
             return {
-                traffic: [],
+                traffics: [],
             };
         },
 
@@ -37,7 +37,7 @@
             getEventHandlers() {
                 return {
                     'Ratp.Traffic': response => {
-                        this.traffic = response.traffic;
+                        this.traffics = response.traffics;
                     },
                 };
             },

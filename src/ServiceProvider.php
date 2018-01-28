@@ -31,7 +31,7 @@ class ServiceProvider extends BaseServiceProvider
         }
 
         $this->publishes([
-            __DIR__.'/assets' => public_path('vendor/ratptraffic'),
+            __DIR__.'/assets' => resource_path('assets'),
         ], 'public');
     }
 }

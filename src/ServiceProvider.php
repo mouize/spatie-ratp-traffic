@@ -3,7 +3,7 @@
 namespace RatpTraffic;
 
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
-use TrafficRatp\Console\Traffic;
+use RatpTraffic\Console\Traffic;
 
 class ServiceProvider extends BaseServiceProvider
 {

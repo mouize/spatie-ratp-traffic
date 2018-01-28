@@ -1,11 +1,11 @@
 <?php
 
-namespace TrafficRatp;
+namespace RatpTraffic;
 
-use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 use TrafficRatp\Console\Traffic;
 
-class RatpTrafficServiceProvider extends ServiceProvider
+class ServiceProvider extends BaseServiceProvider
 {
     /**
      * Bootstrap the application services.

@@ -1,6 +1,6 @@
 <?php
 
-namespace TrafficRatp\Console\Ratp;
+namespace RatpTraffic\Console\Ratp;
 
 use GuzzleHttp\Client;
 use Illuminate\Console\Command;

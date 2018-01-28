@@ -1,6 +1,6 @@
 <?php
 
-namespace TrafficRatp\Events;
+namespace RatpTraffic\Events;
 
 use App\Events\DashboardEvent;
 

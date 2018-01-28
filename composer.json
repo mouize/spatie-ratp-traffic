@@ -1,5 +1,5 @@
 {
-    "name": "mouizina/ratp-traffic",
+    "name": "mouize/ratp-traffic",
     "description": "Tile with traffic status of RATP transports (metro, rer, tramway)",
     "authors": [
         {
@@ -11,7 +11,14 @@
     "require": {},
     "autoload": {
         "psr-0": {
-            "TrafficRatp": "src/"
+            "RatpTraffic": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RatpTraffic\\ServiceProvider"
+            ]
         }
     }
 }

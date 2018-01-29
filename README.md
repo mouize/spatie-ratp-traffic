@@ -48,3 +48,7 @@ NB: You must set position as defined in [spatie documentation](https://murze.be/
 #### Crontab
 
 Add the artisan command **dashboard:ratp-traffic** in the crontab (kernel console, or dashboard command)
+
+#### License
+
+Toutes les données appartiennent à la RATP et sont utilisées dans un but strictement personnel ou de recherche et non dans un but commercial.
